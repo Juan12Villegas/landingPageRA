@@ -1,0 +1,54 @@
+.content-title {
+    padding: 80px 100px 50px 100px;
+    margin: auto;
+    position: relative;
+    /* Establece una posición relativa para el contenido */
+}
+
+@media (max-width: 768px) {
+    .content-title {
+        padding: 80px 20px 20px 20px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-title .content-text {
+        width: 100%;
+    }
+
+    .content-title .content-text-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-text .phrase {
+        font-size: 26px;
+        line-height: 30px;
+        width: 350px;
+    }
+
+    .content-text .description {
+        font-size: 14px;
+    }
+
+    .content-title .contentImage {
+        display: none;
+    }
+}
+
+/* .content-title::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    filter: blur(10px);
+
+    z-index: -1;
+} */

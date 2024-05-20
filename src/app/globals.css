@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --color-complement: #fad01b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: black;
+  background: white;
+}
+
+.circle {
+  width: 30%;
+  height: 90%;
+  margin-top: -2.5rem;
+  background-color: #87a1e8;
+  border-bottom-left-radius: 100%;
+  /* Esto crea la curva del semicírculo */
+  position: absolute;
+  z-index: -10;
+  /* La mitad del tamaño del círculo para que quede centrado debajo del contenido */
+  left: 70%;
+  /* Lo centra horizontalmente */
+}
+
+@media (max-width: 768px) {
+  .circle {
+    display: none;
+  }
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

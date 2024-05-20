@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+    .content-categories {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-cards-categories {
+        display: flex;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+}
+
+.content-cards-categories {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+}

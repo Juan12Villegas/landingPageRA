@@ -1,0 +1,27 @@
+{
+  "name": "menu_web_ra",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ark-ui/react": "^2.2.3",
+    "@nextui-org/react": "^2.3.6",
+    "@park-ui/tailwind-plugin": "^0.20.1",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-scroll": "^1.9.0",
+    "styled-system": "^5.1.5"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}

@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+    .content-about {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .info-about {
+        width: 100%;
+    }
+
+    .images-about {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.border-circle {
+    border: 3px solid #ee274b;
+    background-image: url("/images/icons/augmented-reality.svg");
+    background-size: 60px;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.image-border {
+    width: 140px;
+    height: 220px;
+    border-radius: 80px;
+    filter: brightness(80%);
+}

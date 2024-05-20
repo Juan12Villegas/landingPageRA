@@ -1,0 +1,64 @@
+.border-circle {
+    border: 3px solid #ee274b;
+    background-image: url("/images/icons/augmented-reality.svg");
+    background-size: 60px;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+/* Aplicación de la animación a la imagen */
+.rotating-image {
+    animation: rotate 10s linear infinite;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+}
+
+/* Definición de la animación de rotación */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .content-about {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        margin-top: 0;
+    }
+
+    .info-about {
+        width: 100%;
+    }
+
+    .images-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content-about-ra {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-visualizacion {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-product {
+        width: 200px;
+    }
+
+    .content-info {
+        padding-left: 0;
+        width: 100%;
+    }
+}
