@@ -30,4 +30,6 @@
     height: 220px;
     border-radius: 80px;
     filter: brightness(80%);
+    position: relative;
+    /* Asegura que la animación esté posicionada correctamente */
 }

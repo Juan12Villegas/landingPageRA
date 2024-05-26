@@ -11,20 +11,20 @@ export default function App() {
                         className="min-w-[250px] min-h-[150px]"
                         imageProduct="/images/products/burguer_royal_doble.jpg"
                         nameProduct="Royal Doble"
-                        infoProduct="porción de gelatina casera sabor Piña"
-                        priceProduct="s/ 8.00"
+                        infoProduct="hamburguesa con doble carne, queso, tomate y mucho sabor."
+                        priceProduct="s/ 10.00"
                         descriptionProduct=""
-                        nameTopping={["Grande"]}
+                        nameTopping={["Personal", "+ Papas Fritas"]}
                     />
 
                     <CardDishes
                         className="min-w-[250px] min-h-[150px]"
                         imageProduct="/images/products/burguer_simple.jpg"
                         nameProduct="La Clásica"
-                        infoProduct="porción de gelatina casera sabor Piña"
+                        infoProduct="hamburguesa de carne, queso y tomate."
                         priceProduct="s/ 6.00"
                         descriptionProduct=""
-                        nameTopping={["Grande"]}
+                        nameTopping={["Personal", "+ Papas Fritas"]}
                     />
 
                     <CardDishes

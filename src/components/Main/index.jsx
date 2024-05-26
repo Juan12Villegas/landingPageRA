@@ -4,6 +4,7 @@ import ContentCategories from "../ContentCategories"
 import Title from "../Title";
 import About from "../About"
 import AboutAugmentedReality from "../AboutAugmentedReality"
+import InfoContact from "../InfoContact";
 
 export default function Main() {
     return (
@@ -16,6 +17,9 @@ export default function Main() {
             </div>
             <div id="about-augmented-reality">
                 <AboutAugmentedReality />
+            </div>
+            <div id="info-contact">
+                <InfoContact />
             </div>
         </div >
     )

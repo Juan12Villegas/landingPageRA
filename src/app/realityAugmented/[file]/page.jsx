@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Head from "next/head";
+import { useRouter } from "next/navigation";
 
 export default function Page({ params }) {
   console.log(params?.file);
@@ -21,14 +22,14 @@ export default function Page({ params }) {
 
       // Configuration for Unity WebGL
       const buildUrl = "https://192.168.0.101:8080/";
-      const loaderUrl = `${buildUrl}Build/modelo_pasta.loader.js`;
+      const loaderUrl = `${buildUrl}Build/Build.loader.js`;
       const config = {
         dataUrl: `${buildUrl}Build/${fileLocation}`,
-        frameworkUrl: `${buildUrl}Build/modelo_pasta.framework.js.gz`,
-        codeUrl: `${buildUrl}Build/modelo_pasta.wasm.gz`,
+        frameworkUrl: `${buildUrl}Build/Build.framework.js.gz`,
+        codeUrl: `${buildUrl}Build/Build.wasm.gz`,
         streamingAssetsUrl: `${buildUrl}StreamingAssets`,
-        companyName: "proofProducts",
-        productName: "proof_favorites",
+        companyName: "proofProductsContent",
+        productName: "proof_products",
         productVersion: "1.1",
         cacheControl: (url) => {
           if (url.match(/\.data/) || url.match(/\.bundle/) || url.match(/\.zpt/)) {
@@ -99,6 +100,17 @@ export default function Page({ params }) {
     initializeUnity();
   }, []);
 
+  const router = useRouter();
+
+  const goToMenu = () => {
+    router.push(`/menu`);
+  };
+
+  const handleNavItemSelect = (item) => {
+    router.push("/")
+    setSelectedNavItem(item);
+  };
+
   return (
     <>
       <Head>
@@ -114,8 +126,16 @@ export default function Page({ params }) {
       <div id="unity-container" className="unity-desktop">
         <div id="content-info">
           <div id="info">
-            <p>{infoNameProduct}</p>
+            <div>
+              <p>{infoNameProduct}</p>
+            </div>
+            <div>
+              <button onClick={() => goToMenu()}>
+                Regresar
+              </button>
+            </div>
           </div>
+
         </div>
         <div>
           <canvas id="unity-canvas">
@@ -167,19 +187,25 @@ export default function Page({ params }) {
         }
 
         #content-info {
-          margin-top: 20px;
+          padding-top: 20px;
+          display: flex;
         }
 
         #info {
+          width: 300px;
+          display: flex;
+          justify-content: space-between;
           background-color: white;
           padding: 10px 20px;
           position: absolute;
+          border-radius: 10px;
           z-index: 3;
         }
 
         #unity-canvas {
           width: 100%;
           height: 100%;
+          border-radius: 20px;
           background: #231f20;
           position: absolute;
           z-index: 2;

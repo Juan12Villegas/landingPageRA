@@ -11,10 +11,10 @@ export default function App() {
                         className="min-w-[250px] min-h-[150px]"
                         imageProduct="/images/products/favorite_pasta.jpg"
                         nameProduct="Pasta con Albóndigas"
-                        infoProduct="porción de gelatina casera sabor Piña"
-                        priceProduct="s/ 8.00"
+                        infoProduct="tallarin en salsa de tomate con deliciosas albóndigas."
+                        priceProduct="s/ 15.00"
                         descriptionProduct=""
-                        nameTopping={["Grande"]}
+                        nameTopping={["Personal"]}
                         nameFile="modelo_pasta.data.gz"
                     />
 
@@ -22,8 +22,8 @@ export default function App() {
                         className="min-w-[250px] min-h-[150px]"
                         imageProduct="/images/products/favorite_chuleta.jpg"
                         nameProduct="Chuleta de Cerdo Frita"
-                        infoProduct="porción de gelatina casera sabor Piña"
-                        priceProduct="s/ 6.00"
+                        infoProduct="cortes de chuleta de cerdo fritas y condimentadas."
+                        priceProduct="s/ 20.00"
                         descriptionProduct=""
                         nameTopping={["Grande"]}
                     />

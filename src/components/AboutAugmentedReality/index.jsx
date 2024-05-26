@@ -14,20 +14,19 @@ export default function App() {
         return () => clearInterval(interval);
     }, []);
 
-    const imageList = ["/images/plato1.png", "/images/plato2.jpg", "/images/plato3.jpg"];
+    const imageList = ["/images/imag1.png", "/images/imag2.png", "/images/imag3.png"];
 
     return (
         <div className='content-about px-[100px] mt-[50px]'>
             <div className='content-about-ra flex items-center justify-center'>
-                <p className='title-visualizacion text-[30px] font-bold w-[25%]'>Visualización del MENÚ en Realidad Aumentada</p>
+                <p className='title-visualizacion text-[30px] leading-9 font-bold w-[30%]'>Hechas a la perfección para los paladares más exigentes.</p>
                 <img
                     src={imageList[currentImageIndex]}
                     alt=""
                     className='w-[300px] image-product rotating-image hover:cursor-pointer hover:scale-150 transition delay-75'
                 />
                 <div className='content-info flex flex-col w-[25%] pl-[20px]'>
-                    <p className='font-bold text-[18px]'>¿Cómo utilizar?</p>
-                    <p className='text-[14px]'>Presiona el ícono ubicado sobre algún producto o categoría para visualizar en Realidad Aumentada.</p>
+                    <p className='text-[14px]'>Disfruta de una variedad de platillos exquisitos, preparados con los mejores ingredientes para ofrecer una experiencia de sabor inigualable.</p>
                 </div>
             </div>
 

@@ -1,16 +1,20 @@
+// pages/providerRedux.js
 "use client";
-import { useEffect, useState } from "react";
 import Main from "../components/Main";
 import Load from "@/components/Load";
 import '@park-ui/tailwind-plugin/preset.css';
 import Layout from "../components/Layout";
-import useScript from "../hooks/useScript"; // Asegúrate de importar el hook correctamente
+import useScript from "../hooks/useScript";
 
 export default function ProviderRedux() {
-  const scriptLoaded = useScript("https://192.168.0.101:8080/Build/modelo_pasta.loader.js");
+  const { loaded, error } = useScript("https://192.168.0.101:8080/Build/Build.loader.js");
 
-  if (!scriptLoaded) {
-    return <Load />; // Puedes mostrar un spinner o mensaje de carga
+  if (error) {
+    return <div>Error loading script.</div>;
+  }
+
+  if (!loaded) {
+    return <Load />; // Mostrar un spinner o mensaje de carga
   }
 
   return (

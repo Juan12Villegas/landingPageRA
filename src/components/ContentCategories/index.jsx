@@ -15,43 +15,43 @@ export default function App() {
                     <Categories
                         className="min-w-[200px] max-w-[200px]"
                         titleCategorie="Todas las Categorías"
-                        iconCategorie="/images/bebidas.jpg"
+                        iconCategorie="/images/products/breakfast_coffe_two.jpg"
                     />
 
                     <Categories
                         className="min-w-[150px] max-w-[150px]"
                         titleCategorie="Los Favoritos"
-                        iconCategorie="/images/causa.jpg"
+                        iconCategorie="/images/products/favorite_pasta.jpg"
                     />
 
                     <Categories
                         className="min-w-[150px] max-w-[150px]"
                         titleCategorie="Hamburguesas"
-                        iconCategorie="/images/caldo-gallina.jpg"
+                        iconCategorie="/images/products/burguer_extra_papas.jpg"
                     />
 
                     <Categories
                         className="min-w-[150px] max-w-[150px]"
                         titleCategorie="Lo que Esperabas"
-                        iconCategorie="/images/lomo.jpg"
+                        iconCategorie="/images/products/lqe_egg_rice.jpg"
                     />
 
                     <Categories
                         className="min-w-[150px] max-w-[150px]"
-                        titleCategorie="Para Desayunar"
-                        iconCategorie="/images/ceviche.jpg"
+                        titleCategorie="Para Disfrutar"
+                        iconCategorie="/images/products/breakfast_coffe.jpg"
                     />
 
                     <Categories
                         className="min-w-[150px] max-w-[150px]"
                         titleCategorie="Pollo"
-                        iconCategorie="/images/mazamorra.jpg"
+                        iconCategorie="/images/products/chicken_wings.jpg"
                     />
 
                     <Categories
                         className="min-w-[150px] max-w-[150px]"
                         titleCategorie="Sandwich"
-                        iconCategorie="/images/mazamorra.jpg"
+                        iconCategorie="/images/products/sandwich_chicken_classic.jpg"
                     />
                 </div>
             </div>

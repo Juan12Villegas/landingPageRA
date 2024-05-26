@@ -1,13 +1,16 @@
+// hooks/useScript.js
 import { useEffect, useState } from 'react';
 
 function useScript(src) {
     const [loaded, setLoaded] = useState(false);
+    const [error, setError] = useState(false);
 
     useEffect(() => {
         const script = document.createElement('script');
         script.src = src;
+        script.async = true;
         script.onload = () => setLoaded(true);
-        script.onerror = () => setLoaded(false);
+        script.onerror = () => setError(true);
 
         document.head.appendChild(script);
 
@@ -16,7 +19,7 @@ function useScript(src) {
         };
     }, [src]);
 
-    return loaded;
+    return { loaded, error };
 }
 
 export default useScript;

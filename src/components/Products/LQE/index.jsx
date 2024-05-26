@@ -15,6 +15,7 @@ export default function App() {
                         priceProduct="s/ 8.00"
                         descriptionProduct=""
                         nameTopping={["Grande"]}
+                        nameFile="model_rice_egg.data.gz"
                     />
 
                     <CardDishes
@@ -25,6 +26,7 @@ export default function App() {
                         priceProduct="s/ 8.00"
                         descriptionProduct=""
                         nameTopping={["Grande"]}
+                        nameFile="model_chicken_rice.data.gz"
                     />
                 </div>
             </div>

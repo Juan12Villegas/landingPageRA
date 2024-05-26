@@ -33,7 +33,7 @@ export default function App({ imageProduct, nameProduct, priceProduct, infoProdu
             <CardHeader className="flex-col items-start py-2 px-1 h-[200px] w-[100%]">
                 <p className="name-product font-semibold text-black">{nameProduct}</p>
                 <p className="info-product font-semibold text-black">{infoProduct}</p>
-                <div>
+                <div className="mt-2">
                     <h4 className="font-bold text-large ml-auto">{priceProduct}</h4>
                 </div>
 

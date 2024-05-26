@@ -7,7 +7,7 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 export default function App() {
     const router = useRouter();
 
-    const menuItems = ["Inicio", "Sobre nosotros", "Categorías", "Recomendaciones"];
+    const menuItems = ["Inicio", "Sobre nosotros", "Contáctanos"];
 
     const [selectedNavItem, setSelectedNavItem] = React.useState(menuItems[0]);
 
@@ -49,26 +49,14 @@ export default function App() {
                 </NavbarItem>
                 <NavbarItem>
                     <ScrollLink
-                        to="categories"
+                        to="info-contact"
                         smooth={true}
                         duration={500}
                         offset={-70}
-                        className={`hover:cursor-pointer ${selectedNavItem === "categories" ? "" : ""}`}
-                        onClick={() => handleNavItemSelect("categories")}
+                        className={`hover:cursor-pointer ${selectedNavItem === "info-contact" ? "" : ""}`}
+                        onClick={() => handleNavItemSelect("info-contact")}
                     >
-                        Categorías
-                    </ScrollLink>
-                </NavbarItem>
-                <NavbarItem>
-                    <ScrollLink
-                        to="recommendations"
-                        smooth={true}
-                        duration={500}
-                        offset={-70}
-                        className={`hover:cursor-pointer ${selectedNavItem === "recommendations" ? "" : ""}`}
-                        onClick={() => handleNavItemSelect("recommendations")}
-                    >
-                        Recomendaciones
+                        Contáctanos
                     </ScrollLink>
                 </NavbarItem>
             </NavbarContent>
