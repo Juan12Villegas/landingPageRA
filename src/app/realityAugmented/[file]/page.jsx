@@ -14,7 +14,7 @@ export default function Page({ params }) {
       var db = indexedDB.open("dummy_indexdb", 1);
 
       // Configuration for Unity WebGL
-      const buildUrl = "https://127.0.0.1:8080/";
+      const buildUrl = "https://192.168.0.101:8080/";
       const loaderUrl = `${buildUrl}Build/modelo_pasta.loader.js`;
       const config = {
         dataUrl: `${buildUrl}Build/${fileLocation}`,
