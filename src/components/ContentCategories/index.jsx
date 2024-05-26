@@ -4,7 +4,7 @@ import Categories from "../Categories"
 
 export default function App() {
     return (
-        <div className="content-categories overflow-x-hidden px-[100px] mt-[50px]">
+        <div className="content-categories overflow-x-hidden px-[100px] ">
             <div className="flex flex-col items-center mb-6">
                 <p className="text-xl text-center font-bold">Nuestras Categorías</p>
                 <div className="border-2 rounded-xl border-yellow-400 w-[150px]"></div>
@@ -14,40 +14,45 @@ export default function App() {
                 <div className="content-cards-categories gap-4">
                     <Categories
                         className="min-w-[200px] max-w-[200px]"
-                        titleCategorie="Bebidas"
+                        titleCategorie="Todas las Categorías"
                         iconCategorie="/images/bebidas.jpg"
                     />
 
                     <Categories
                         className="min-w-[150px] max-w-[150px]"
-                        titleCategorie="Entradas"
+                        titleCategorie="Los Favoritos"
                         iconCategorie="/images/causa.jpg"
                     />
 
                     <Categories
                         className="min-w-[150px] max-w-[150px]"
-                        titleCategorie="Sopas"
+                        titleCategorie="Hamburguesas"
                         iconCategorie="/images/caldo-gallina.jpg"
                     />
 
                     <Categories
                         className="min-w-[150px] max-w-[150px]"
-                        titleCategorie="Fondos"
+                        titleCategorie="Lo que Esperabas"
                         iconCategorie="/images/lomo.jpg"
                     />
 
                     <Categories
                         className="min-w-[150px] max-w-[150px]"
-                        titleCategorie="Ceviches"
+                        titleCategorie="Para Desayunar"
                         iconCategorie="/images/ceviche.jpg"
                     />
 
                     <Categories
                         className="min-w-[150px] max-w-[150px]"
-                        titleCategorie="Postres"
+                        titleCategorie="Pollo"
                         iconCategorie="/images/mazamorra.jpg"
                     />
 
+                    <Categories
+                        className="min-w-[150px] max-w-[150px]"
+                        titleCategorie="Sandwich"
+                        iconCategorie="/images/mazamorra.jpg"
+                    />
                 </div>
             </div>
         </div>

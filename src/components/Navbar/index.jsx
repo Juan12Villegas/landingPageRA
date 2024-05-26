@@ -28,8 +28,8 @@ export default function App() {
                     onClick={() => handleNavItemSelect("title")}
                 >
                     <div className='contentBusiness flex gap-2.5 items-center'>
-                        <img src="/images/logo.png" alt="" className='w-[30px] rounded-[50%]' />
-                        <p className='font-bold mb-0'> Nombre del Negocio </p>
+                        <img src="/images/logoRancho.jpeg" alt="" className='w-[30px] rounded-[50%]' />
+                        <p className='font-bold mb-0'> El Rancho de mi Mamá </p>
                     </div>
                 </ScrollLink>
             </NavbarBrand>

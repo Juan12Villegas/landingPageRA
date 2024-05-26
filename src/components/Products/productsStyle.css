@@ -1,0 +1,14 @@
+@media (max-width: 768px) {
+    .content-product {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.content-cards {
+    scrollbar-width: none;
+}

@@ -1,5 +1,5 @@
 import react from "react";
-import Card from "../Card";
+import CardDishes from "../CardDishes";
 import styles from './recommendationsStyle.css';
 
 export default function Recommendations() {
@@ -11,8 +11,8 @@ export default function Recommendations() {
             </div>
             <div className="content-cards overflow-x-auto whitespace-nowrap">
                 <div className="flex gap-4">
-                    <Card
-                        className="min-w-[250px] min-h-[150px]"
+                    <CardDishes
+                        className="min-w-[250px] min-h-[100px]"
                         imageProduct="/images/caldo-gallina.jpg"
                         nameProduct="Caldo de Gallina"
                         infoProduct="con canchita y huevo"
@@ -20,8 +20,8 @@ export default function Recommendations() {
                         descriptionProduct="Ceviche de caballa"
                         nameTopping={["Normal"]}
                     />
-                    <Card
-                        className="min-w-[250px] min-h-[150px]"
+                    <CardDishes
+                        className="min-w-[250px] min-h-[100px]"
                         imageProduct="/images/ceviche.jpg"
                         nameProduct="Ceviche de Caballa"
                         infoProduct="con pescado fresco"
@@ -30,8 +30,8 @@ export default function Recommendations() {
                         nameTopping={["Mediano"]}
                     />
 
-                    <Card
-                        className="min-w-[250px] min-h-[150px]"
+                    <CardDishes
+                        className="min-w-[250px] min-h-[100px]"
                         imageProduct="/images/lomo.jpg"
                         nameProduct="Lomo Saltado a la Pobre"
                         infoProduct="con carne de res y platanos fritos"
@@ -40,8 +40,8 @@ export default function Recommendations() {
                         nameTopping={["Mediano", "Papas fritas", "Plátanos fritos"]}
                     />
 
-                    <Card
-                        className="min-w-[250px] min-h-[150px]"
+                    <CardDishes
+                        className="min-w-[250px] min-h-[100px]"
                         imageProduct="/images/anticuchos.jpg"
                         nameProduct="Anticuchos de Corazón"
                         infoProduct="100% corazon de res"
@@ -50,8 +50,8 @@ export default function Recommendations() {
                         nameTopping={["3 anticuchos"]}
                     />
 
-                    <Card
-                        className="min-w-[250px] min-h-[150px]"
+                    <CardDishes
+                        className="min-w-[250px] min-h-[100px]"
                         imageProduct="/images/ceviche.jpg"
                         nameProduct="Ceviche de Caballa"
                         infoProduct="con pescado fresco"

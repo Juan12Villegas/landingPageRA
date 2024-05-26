@@ -17,12 +17,6 @@ export default function Main() {
             <div id="about-augmented-reality">
                 <AboutAugmentedReality />
             </div>
-            <div id="categories">
-                <ContentCategories />
-            </div>
-            <div id="recommendations">
-                <Recommendations />
-            </div>
         </div >
     )
 }
