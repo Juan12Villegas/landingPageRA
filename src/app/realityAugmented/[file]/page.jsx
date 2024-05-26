@@ -162,6 +162,14 @@ export default function Page({ params }) {
           background: #231f20;
         }
 
+        @media (max-width: 768px) {
+          #unity-canvas {
+            width: 100%;
+            height: 645px;
+            background: #231f20;
+          }
+      }
+
         #loading-cover {
           position: absolute;
           top: 0;
