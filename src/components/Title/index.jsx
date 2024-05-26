@@ -12,7 +12,7 @@ export default function Title() {
         router.push('/menu');
     };
 
-    const menuItems = ["Inicio", "Sobre el restaurant", "Categorías", "Recomendaciones"];
+    const menuItems = ["Inicio", "Sobre nosotros", "Categorías", "Recomendaciones"];
 
     const [selectedNavItem, setSelectedNavItem] = React.useState(menuItems[0]);
 
@@ -22,8 +22,8 @@ export default function Title() {
     };
 
     return (
-        <div className="content-title h-auto text-left px-[100px] py-[50px] flex items-center">
-            <div className='content-text flex-auto w-[50%] '>
+        <div className="content-title h-auto text-left px-[100px] py-[50px] flex gap-20 justify-center items-center">
+            <div className='content-text'>
                 <div className='content-text-title mb-6'>
                     <p className='phrase text-[40px] font-bold leading-10 mb-1 px-4'> Sabores auténticos </p>
                     <p className='phrase text-[40px] font-bold leading-10 mb-1 bg-[#facc15] w-[490px] py-2 px-4 rounded-3xl'>momentos inolvidables </p>
@@ -31,12 +31,12 @@ export default function Title() {
                 </div>
 
                 <div className='px-4'>
-                    <button className='bg-[#003c37] text-white font-bold animate-bounce p-2 rounded-lg'
+                    <button className='bg-[#fc381c] text-white font-bold animate-bounce p-2 rounded-lg'
                         onClick={goToMenu}>Visualizar Carta</button>
                 </div>
             </div>
-            <div className='contentImage flex-auto w-[30%]'>
-                <img className='' src="/images/ceviche.png" alt="Imagen" />
+            <div className='contentImage'>
+                <img className='' src="/images/burguer.png" alt="Imagen" />
             </div>
         </div>
     );

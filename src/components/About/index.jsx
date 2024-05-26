@@ -5,7 +5,7 @@ export default function App() {
     return (
         <div className='content-about px-[100px]'>
             <div className="text-center mb-6">
-                <p className='text-[#003c37] text-[16px] font-semibold'>Sobre el restaurant</p>
+                <p className='text-[#003c37] text-[16px] font-semibold'>Sobre Nosotros</p>
                 <p className='text-[30px] font-bold'>El lugar perfecto para una experiencia excepcional</p>
             </div>
             <div className='images-about flex items-center justify-center gap-8 mt-4'>
@@ -14,7 +14,7 @@ export default function App() {
                     <img src="/images/comida.jpg" alt="" className='image-border' />
                 </div>
                 <div className='info-about w-[50%] text-justify'>
-                    <p className='text-[14px]'>El Rancho de mi Mamá con 15 años de excelencia gastronómica. Déjate llevar por una experiencia gastronómica única en nuestro encantador restaurant, donde la calidad y la creatividad se encuentran en cada plato y cada cóctel.</p>
+                    <p className='text-[14px]'>Hakuna Matata con 15 años de excelencia gastronómica. Déjate llevar por una experiencia gastronómica única en nuestra encantadora hamburguesería, donde la calidad y la creatividad se encuentran en cada plato y cada bebida.</p>
 
                     <div className='flex flex-col gap-3 mt-3'>
                         <div className='flex items-center gap-3'>

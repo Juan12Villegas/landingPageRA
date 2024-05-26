@@ -7,7 +7,7 @@ import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 export default function App() {
     const router = useRouter();
 
-    const menuItems = ["Inicio", "Sobre el restaurant", "Categorías", "Recomendaciones"];
+    const menuItems = ["Inicio", "Sobre nosotros", "Categorías", "Recomendaciones"];
 
     const [selectedNavItem, setSelectedNavItem] = React.useState(menuItems[0]);
 
@@ -28,8 +28,8 @@ export default function App() {
                     onClick={() => handleNavItemSelect("title")}
                 >
                     <div className='contentBusiness flex gap-2.5 items-center'>
-                        <img src="/images/logoRancho.jpeg" alt="" className='w-[30px] rounded-[50%]' />
-                        <p className='font-bold mb-0'> El Rancho de mi Mamá </p>
+                        <img src="/images/logo_hakuna.jpg" alt="" className='w-[30px] rounded-[50%]' />
+                        <p className='font-bold mb-0'> Hakuna Matata </p>
                     </div>
                 </ScrollLink>
             </NavbarBrand>
@@ -44,7 +44,7 @@ export default function App() {
                         className={`hover:cursor-pointer ${selectedNavItem === "about" ? "" : ""}`}
                         onClick={() => handleNavItemSelect("about")}
                     >
-                        Sobre el restaurant
+                        Sobre nosotros
                     </ScrollLink>
                 </NavbarItem>
                 <NavbarItem>

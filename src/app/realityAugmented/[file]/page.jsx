@@ -7,6 +7,12 @@ export default function Page({ params }) {
   console.log(params?.file);
   const [fileLocation, setFileLocation] = useState(params?.file);
   const [isClient, setIsClient] = useState(false);
+  var infoNameProduct;
+  if (params?.file == "modelo_pasta.data.gz") {
+    infoNameProduct = "Pasta con Albóndigas";
+  } else {
+    infoNameProduct = "Sin definir";
+  }
 
   useEffect(() => {
     const initializeUnity = () => {
@@ -106,8 +112,10 @@ export default function Page({ params }) {
         <title>ProofZapper2</title>
       </Head>
       <div id="unity-container" className="unity-desktop">
-        <div>
-          <p>holiii</p>
+        <div id="content-info">
+          <div id="info">
+            <p>{infoNameProduct}</p>
+          </div>
         </div>
         <div>
           <canvas id="unity-canvas">
@@ -154,12 +162,27 @@ export default function Page({ params }) {
         #unity-container {
           width: 100%;
           height: 100%;
+          position: relative;
+          z-index: 1;
+        }
+
+        #content-info {
+          margin-top: 20px;
+        }
+
+        #info {
+          background-color: white;
+          padding: 10px 20px;
+          position: absolute;
+          z-index: 3;
         }
 
         #unity-canvas {
           width: 100%;
           height: 100%;
           background: #231f20;
+          position: absolute;
+          z-index: 2;
         }
 
         @media (max-width: 768px) {
