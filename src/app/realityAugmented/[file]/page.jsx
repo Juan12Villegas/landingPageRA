@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Head from "next/head";
 
-export default function page({ params }) {
+export default function Page({ params }) {
   console.log(params?.file);
   const [fileLocation, setFileLocation] = useState(params?.file);
   const [isClient, setIsClient] = useState(false);
