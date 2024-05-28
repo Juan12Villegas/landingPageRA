@@ -227,14 +227,14 @@ export default function Page({ params }) {
         #unity-canvas {
           width: 100%;
           height: 100%;
-          border-radius: 20px;
-          background: #231f20;
+          background: #ffffff;
         }
 
         @media (max-width: 768px) {
           #unity-canvas {
-            width: 100%;
-            height: 645px;
+            width: max-content;
+            min-height: 100vh;
+            max-height: max-content;
             background: #231f20;
           }
       }
