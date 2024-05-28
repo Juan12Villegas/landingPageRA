@@ -233,7 +233,7 @@ export default function Page({ params }) {
         @media (max-width: 768px) {
           #unity-canvas {
             width: max-content;
-            min-height: 100vh;
+            min-height: 670px;
             max-height: max-content;
             background: #231f20;
           }
