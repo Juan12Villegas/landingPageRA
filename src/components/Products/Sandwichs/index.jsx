@@ -22,11 +22,11 @@ export default function App() {
                         className="min-w-[250px] min-h-[150px]"
                         imageProduct="/images/products/sandwich_chicken_classic.jpg"
                         nameProduct="Sandwich Clásico"
-                        infoProduct="porción de gelatina casera sabor Piña"
+                        infoProduct="sandwich a base de pan tostado mas carne y verduras"
                         priceProduct="s/ 8.00"
                         descriptionProduct=""
-                        nameTopping={["Grande"]}
-                        nameFile={''}
+                        nameTopping={["Personal"]}
+                        nameFile="model_sandwich.data.gz"
                     />
                 </div>
             </div>

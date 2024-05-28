@@ -21,10 +21,11 @@ export default function App() {
                         className="min-w-[250px] min-h-[150px]"
                         imageProduct="/images/products/chicken_wings.jpg"
                         nameProduct="Alitas de Pollo"
-                        infoProduct="porción de gelatina casera sabor Piña"
-                        priceProduct="s/ 8.00"
+                        infoProduct="porción de alitas de pollo en salsa de la casa"
+                        priceProduct="s/ 12.00"
                         descriptionProduct=""
-                        nameTopping={["Grande"]}
+                        nameTopping={["Personal"]}
+                        nameFile="modelo_wingz.data.gz"
                     />
                 </div>
             </div>

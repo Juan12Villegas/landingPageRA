@@ -27,6 +27,16 @@ export default function App() {
                         nameTopping={["Personal"]}
                         nameFile="model_chicken_rice.data.gz"
                     />
+                    <CardDishes
+                        className="min-w-[250px] min-h-[150px]"
+                        imageProduct="/images/products/chaufa.jpg"
+                        nameProduct="Chaufa Mixto"
+                        infoProduct="porción de arroz chaufa con pollo, mariscos, huevo y carne"
+                        priceProduct="s/ 16.00"
+                        descriptionProduct=""
+                        nameTopping={["Personal"]}
+                        nameFile="modelo_chaufa.data.gz"
+                    />
                 </div>
             </div>
         </div>

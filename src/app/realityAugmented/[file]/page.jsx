@@ -25,6 +25,26 @@ export default function Page({ params }) {
       price = "s/ 14.00";
       topping = "Personal";
       break;
+    case "modelo_chaufa.data.gz":
+      infoNameProduct = "Chaufa Misto"
+      price = "s/ 16.00";
+      topping = "Personal";
+      break;
+    case "modelo_cafe.data.gz":
+      infoNameProduct = "Café"
+      price = "s/ 5.00";
+      topping = "Personal";
+      break;
+    case "modelo_wingz.data.gz":
+      infoNameProduct = "Alitas de Pollo"
+      price = "s/ 12.00";
+      topping = "Personal";
+      break;
+    case "model_sandwich.data.gz":
+      infoNameProduct = "Sandwich Clásico"
+      price = "s/ 8.00";
+      topping = "Personal";
+      break;
     default:
       infoNameProduct = "Sin definir";
       price = "";

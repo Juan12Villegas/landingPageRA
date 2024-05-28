@@ -21,10 +21,11 @@ export default function App() {
                         className="min-w-[250px] min-h-[150px]"
                         imageProduct="/images/products/breakfast_coffe.jpg"
                         nameProduct="Café"
-                        infoProduct="porción de gelatina casera sabor Piña"
-                        priceProduct="s/ 8.00"
+                        infoProduct="taza de granos de café molido"
+                        priceProduct="s/ 5.00"
                         descriptionProduct=""
-                        nameTopping={["Grande"]}
+                        nameTopping={["Personal"]}
+                        nameFile="modelo_cafe.data.gz"
                     />
 
                     <CardDishes
