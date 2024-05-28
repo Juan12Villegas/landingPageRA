@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 import CardDishes from "../CardDishes";
 import styles from './recommendationsStyle.css';
 
@@ -9,58 +9,38 @@ export default function Recommendations() {
                 <p className="text-xl text-center font-bold">Recomendaciones del Chef</p>
                 <div className="border-2 rounded-xl border-yellow-400 w-[150px]"></div>
             </div>
-            <div className="content-cards overflow-x-auto whitespace-nowrap">
-                <div className="flex gap-4">
-                    <CardDishes
-                        className="min-w-[250px] min-h-[100px]"
-                        imageProduct="/images/caldo-gallina.jpg"
-                        nameProduct="Caldo de Gallina"
-                        infoProduct="con canchita y huevo"
-                        priceProduct="s/ 15.00"
-                        descriptionProduct="Ceviche de caballa"
-                        nameTopping={["Normal"]}
-                    />
-                    <CardDishes
-                        className="min-w-[250px] min-h-[100px]"
-                        imageProduct="/images/ceviche.jpg"
-                        nameProduct="Ceviche de Caballa"
-                        infoProduct="con pescado fresco"
-                        priceProduct="s/ 25.00"
-                        descriptionProduct="Ceviche de caballa"
-                        nameTopping={["Mediano"]}
-                    />
-
-                    <CardDishes
-                        className="min-w-[250px] min-h-[100px]"
-                        imageProduct="/images/lomo.jpg"
-                        nameProduct="Lomo Saltado a la Pobre"
-                        infoProduct="con carne de res y platanos fritos"
-                        priceProduct="s/ 20.00"
-                        descriptionProduct="Lomo Saltado a lo Pobre"
-                        nameTopping={["Mediano", "Papas fritas", "Plátanos fritos"]}
-                    />
-
-                    <CardDishes
-                        className="min-w-[250px] min-h-[100px]"
-                        imageProduct="/images/anticuchos.jpg"
-                        nameProduct="Anticuchos de Corazón"
-                        infoProduct="100% corazon de res"
-                        priceProduct="s/ 15.00"
-                        descriptionProduct="Lomo Saltado a lo Pobre"
-                        nameTopping={["3 anticuchos"]}
-                    />
-
-                    <CardDishes
-                        className="min-w-[250px] min-h-[100px]"
-                        imageProduct="/images/ceviche.jpg"
-                        nameProduct="Ceviche de Caballa"
-                        infoProduct="con pescado fresco"
-                        priceProduct="s/ 25.00"
-                        descriptionProduct="Ceviche de caballa"
-                        nameTopping={["Mediano", "Sin piel", "Con ají", "Extra cebolla", "+ porción chifles"]}
-                    />
-                </div>
+            <div className="content-cards flex gap-4 overflow-x-auto">
+                <CardDishes
+                    className=""
+                    imageProduct="/images/products/lqe_egg_rice.jpg"
+                    nameProduct="Arroz Tapado + Huevo Frito"
+                    infoProduct="porción de arroz con huevo frito y ensalada"
+                    priceProduct="s/ 10.00"
+                    descriptionProduct=""
+                    nameTopping={["Personal"]}
+                    nameFile="model_rice_egg.data.gz"
+                />
+                <CardDishes
+                    className=""
+                    imageProduct="/images/products/lqe_chicken_rice.jpg"
+                    nameProduct="Muslo de Pollo + Arroz"
+                    infoProduct="porción de arroz con muslo de pollo hornado y ensalada"
+                    priceProduct="s/ 14.00"
+                    descriptionProduct=""
+                    nameTopping={["Personal"]}
+                    nameFile="model_chicken_rice.data.gz"
+                />
+                <CardDishes
+                    className=""
+                    imageProduct="/images/products/favorite_pasta.jpg"
+                    nameProduct="Pasta con Albóndigas"
+                    infoProduct="tallarin en salsa de tomate con deliciosas albóndigas."
+                    priceProduct="s/ 15.00"
+                    descriptionProduct=""
+                    nameTopping={["Personal"]}
+                    nameFile="modelo_pasta.data.gz"
+                />
             </div>
         </div>
-    )
+    );
 }

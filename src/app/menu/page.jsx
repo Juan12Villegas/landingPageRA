@@ -1,29 +1,29 @@
 "use client";
+import React, { useEffect } from 'react';
 import Recommendations from "@/components/Recommendations";
-import ContentCategories from "../../components/ContentCategories"
-import Burguers from "../../components/Products/Burguers"
-import Favorites from "../../components/Products/Favorites"
-import Sandwichs from "../../components/Products/Sandwichs"
-import LQE from "../../components/Products/LQE"
-import Chickens from "../../components/Products/Chickens"
-import Breakfast from "../../components/Products/Breakfast"
+import ContentCategories from "../../components/ContentCategories";
 import '@park-ui/tailwind-plugin/preset.css';
 import Layout from "../../components/Layout";
 
-export default function ProviderRedux() {
+export default function Page() {
+  useEffect(() => {
+    // Verificar si la página ha sido recargada
+    const isReloaded = sessionStorage.getItem('isReloaded');
+    console.log("Estado de reload: " + isReloaded);
+    // Si la página no ha sido recargada, marcarla como recargada y recargar la página
+    if (isReloaded == "false") {
+      window.location.reload();
+      console.log("RECARGAR PÁGINA");
+      sessionStorage.setItem('isReloaded', 'true');
+    }
+  }, []);
+
   return (
     <div className="">
-      {/* <div className='circle'></div> */}
       <Layout>
         <div className="mt-[100px]">
           <Recommendations />
           <ContentCategories />
-          <Favorites />
-          <Burguers />
-          <LQE />
-          <Breakfast />
-          <Chickens />
-          <Sandwichs />
         </div>
       </Layout>
     </div>

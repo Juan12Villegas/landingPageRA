@@ -1,3 +1,17 @@
+.content-cards-categories {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+
+}
+
+#content-category-selected {
+    margin-top: 45px;
+}
+
 @media (max-width: 768px) {
     .content-categories {
         padding-left: 20px;
@@ -13,10 +27,8 @@
         overflow-x: auto;
         scrollbar-width: none;
     }
-}
 
-.content-cards-categories {
-    display: flex;
-    overflow-x: auto;
-    scrollbar-width: none;
+    #content-category-selected {
+        margin-top: 0px;
+    }
 }

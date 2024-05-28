@@ -1,5 +1,4 @@
 "use client"; // Marcar el componente como un Client Component
-
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/navigation";
@@ -8,12 +7,29 @@ export default function Page({ params }) {
   console.log(params?.file);
   const [fileLocation, setFileLocation] = useState(params?.file);
   const [isClient, setIsClient] = useState(false);
-  var infoNameProduct;
-  if (params?.file == "modelo_pasta.data.gz") {
-    infoNameProduct = "Pasta con Albóndigas";
-  } else {
-    infoNameProduct = "Sin definir";
-  }
+  var infoNameProduct, price, topping;
+
+  switch (params?.file) {
+    case "modelo_pasta.data.gz":
+      infoNameProduct = "Pasta con Albóndigas";
+      price = "s/ 15.00";
+      topping = "Personal";
+      break;
+    case "model_rice_egg.data.gz":
+      infoNameProduct = "Arroz Tapado + Huevo Frito";
+      price = "s/ 10.00";
+      topping = "Personal";
+      break;
+    case "model_chicken_rice.data.gz":
+      infoNameProduct = "Muslo de Pollo + Arroz"
+      price = "s/ 14.00";
+      topping = "Personal";
+      break;
+    default:
+      infoNameProduct = "Sin definir";
+      price = "";
+      topping = "";
+  };
 
   useEffect(() => {
     const initializeUnity = () => {
@@ -103,7 +119,10 @@ export default function Page({ params }) {
   const router = useRouter();
 
   const goToMenu = () => {
+    sessionStorage.setItem('isReloaded', 'false');
+    console.log("Mando reload desde Title: " + sessionStorage.getItem('isReloaded'));
     router.push(`/menu`);
+
   };
 
   const handleNavItemSelect = (item) => {
@@ -123,25 +142,36 @@ export default function Page({ params }) {
         <link rel="shortcut icon" href="favicon.ico" />
         <title>ProofZapper2</title>
       </Head>
-      <div id="unity-container" className="unity-desktop">
-        <div id="content-info">
-          <div id="info">
-            <div>
+      <div id="unity-container" className="unity-desktop flex justify-center">
+        <div className="absolute rounded-xl p-4">
+          <div className="content-info-ra z-2 mb-4 p-2">
+            <div className="flex items-center gap-2 mb-2">
+              <img className="w-[24px] h-[24px]" src="https://img.icons8.com/?size=100&id=8439&format=png&color=000000" alt="" />
               <p>{infoNameProduct}</p>
             </div>
-            <div>
+            <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2">
+                <img className="w-[24px]" src="https://img.icons8.com/?size=100&id=8412&format=png&color=000000" alt="" />
+                <p>{price}</p>
+              </div>
+              <div>
+                <p>{topping}</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="content-info-ra py-1 text-center">
               <button onClick={() => goToMenu()}>
                 Regresar
               </button>
             </div>
           </div>
-
         </div>
-        <div>
+
+        <div className="z-1">
           <canvas id="unity-canvas">
           </canvas>
         </div>
-
       </div>
       <div id="loading-cover" style={{ display: "none" }}>
         <div id="unity-loading-bar">
@@ -182,24 +212,16 @@ export default function Page({ params }) {
         #unity-container {
           width: 100%;
           height: 100%;
-          position: relative;
-          z-index: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
 
-        #content-info {
-          padding-top: 20px;
-          display: flex;
-        }
-
-        #info {
-          width: 300px;
-          display: flex;
-          justify-content: space-between;
-          background-color: white;
-          padding: 10px 20px;
-          position: absolute;
+        .content-info-ra {
+          background: rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(5px);
           border-radius: 10px;
-          z-index: 3;
         }
 
         #unity-canvas {
@@ -207,8 +229,6 @@ export default function Page({ params }) {
           height: 100%;
           border-radius: 20px;
           background: #231f20;
-          position: absolute;
-          z-index: 2;
         }
 
         @media (max-width: 768px) {

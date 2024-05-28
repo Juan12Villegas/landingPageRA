@@ -4,11 +4,11 @@ import styles from "../productsStyle.css"
 export default function App() {
     return (
         <div className="">
-            <div className="content-product px-[100px] mt-[50px]">
+            <div className="content-product px-[100px] mt-[5px]">
                 <p className="text-xl text-start font-bold mb-5">Los Favoritos</p>
                 <div className="content-cards flex gap-4 overflow-x-auto">
                     <CardDishes
-                        className="min-w-[250px] min-h-[150px]"
+                        className=""
                         imageProduct="/images/products/favorite_pasta.jpg"
                         nameProduct="Pasta con Albóndigas"
                         infoProduct="tallarin en salsa de tomate con deliciosas albóndigas."
@@ -19,7 +19,7 @@ export default function App() {
                     />
 
                     <CardDishes
-                        className="min-w-[250px] min-h-[150px]"
+                        className=""
                         imageProduct="/images/products/favorite_chuleta.jpg"
                         nameProduct="Chuleta de Cerdo Frita"
                         infoProduct="cortes de chuleta de cerdo fritas y condimentadas."
