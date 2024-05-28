@@ -1,3 +1,10 @@
+.content-contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .content-info-contact {
     width: 200px;
     background-color: #ffffff;
@@ -6,6 +13,12 @@
 }
 
 @media (max-width: 768px) {
+    .content-contact {
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+
     .content-general-info {
         display: flex;
         flex-direction: column;

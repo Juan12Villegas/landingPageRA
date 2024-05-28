@@ -23,10 +23,10 @@ export default function App() {
                 <img
                     src={imageList[currentImageIndex]}
                     alt=""
-                    className='w-[300px] image-product rotating-image hover:cursor-pointer hover:scale-150 transition delay-75'
+                    className='w-[300px] image-product py-2 rotating-image hover:cursor-pointer hover:scale-150 transition delay-75'
                 />
                 <div className='content-info flex flex-col w-[25%] pl-[20px]'>
-                    <p className='text-[14px]'>Disfruta de una variedad de platillos exquisitos, preparados con los mejores ingredientes para ofrecer una experiencia de sabor inigualable.</p>
+                    <p className='text-[14px] text-justify'>Disfruta de una variedad de platillos exquisitos, preparados con los mejores ingredientes para ofrecer una experiencia de sabor inigualable.</p>
                 </div>
             </div>
 

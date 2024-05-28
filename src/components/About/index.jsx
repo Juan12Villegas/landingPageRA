@@ -6,7 +6,7 @@ export default function App() {
         <div className='content-about px-[100px]'>
             <div className="text-center mb-6">
                 <p className='text-[#fc381c] text-[16px] font-semibold'>Sobre Nosotros</p>
-                <p className='text-[30px] font-bold'>El lugar perfecto para una experiencia excepcional</p>
+                <p className='text-[30px] font-bold leading-9'>El lugar perfecto para una experiencia excepcional</p>
             </div>
             <div className='images-about flex items-center justify-center gap-8 mt-4'>
                 <div className='flex gap-4'>

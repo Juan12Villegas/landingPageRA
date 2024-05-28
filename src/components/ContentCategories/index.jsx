@@ -39,7 +39,7 @@ export default function App() {
 
     return (
         <div>
-            <div className="content-categories overflow-x-hidden px-[100px] ">
+            <div className="content-categories overflow-x-hidden px-[100px] mt-[20px]">
                 <div className="flex flex-col items-center mb-6">
                     <p className="text-xl text-center font-bold">Nuestras Categorías</p>
                     <div className="border-2 rounded-xl border-[#facc15] w-[150px]"></div>
@@ -168,7 +168,7 @@ export default function App() {
                     </div>
                 </div>
             </div>
-            <div id="content-category-selected">
+            <div id="content-category-selected" className="mt-[45px]">
                 {renderCategoryContent()}
             </div>
         </div>
