@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 import useScript from "../hooks/useScript";
 
 export default function ProviderRedux() {
-  const { loaded, error } = useScript("https://192.168.0.101:8080/Build/Build.loader.js");
+  const { loaded, error } = useScript("https://10.40.192.255:8080/Build/Build.loader.js");
 
   if (error) {
     return <div>Error loading script.</div>;
